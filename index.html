@@ -66,7 +66,7 @@
           No results
         </p>
         <button
-          class="bg-primary hover:bg-primary-hover text-[14px] text-white rounded-[10px] py-3 px-[14px] absolute top-1/2 transform -translate-y-1/2 right-2"
+          class="searchBtn bg-primary hover:bg-primary-hover text-[14px] text-white rounded-[10px] py-3 px-[14px] absolute top-1/2 transform -translate-y-1/2 right-2"
           type="submit">
           Search
         </button>
@@ -74,21 +74,26 @@
       <div class="main-card bg-light-bg px-[14px] rounded-2xl">
         <div class="flex my-8 gap-[19px]">
           <img
-            class="w-[70px] h-[70px]"
+            class="profileImage w-[70px] h-[70px] rounded-[50%]"
             src="./assets/Oval.png"
             alt="#"
             aria-label="hidden" />
           <div>
-            <h2 class="font-extrabold text-heading-s">The Octocat</h2>
-            <a class="text-body-s text-primary hover:text-primary-hover" href=""
+            <h2 class="profileName font-extrabold text-heading-s">
+              The Octocat
+            </h2>
+            <a
+              class="profileUserName text-body-s text-primary hover:text-primary-hover"
+              href=""
+              target="_blank"
               >@octocat</a
             >
             <p class="text-body-s text-light-toggle">
-              Joined <span>25 Jan 2011</span>
+              Joined <span class="userJoinedDate">25 Jan 2011</span>
             </p>
           </div>
         </div>
-        <p class="text-body-s text-light-toggle mb-6">
+        <p class="profileAbout text-body-s text-light-toggle mb-6">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
           Quisque volutpat mattis eros.
         </p>
@@ -96,28 +101,37 @@
           class="bg-light-bg-2 mx-auto rounded-[10px] flex justify-between text-center px-8 py-5 mb-6">
           <div class="flex flex-col gap-2">
             <span class="text-[11px] text-light-heading-2">Repos</span>
-            <span class="text-heading-main font-extrabold">8</span>
+            <span class="profileRepos text-heading-main font-extrabold">8</span>
           </div>
           <div class="flex flex-col gap-2">
             <span class="text-[11px] text-light-heading-2">Followers</span>
-            <span class="text-heading-main font-extrabold">3938</span>
+            <span class="profileFollowers text-heading-main font-extrabold"
+              >3938</span
+            >
           </div>
           <div class="flex flex-col gap-2">
             <span class="text-[11px] text-light-heading-2">Following</span>
-            <span class="text-heading-main font-extrabold">9</span>
+            <span class="profileFollowing text-heading-main font-extrabold"
+              >9</span
+            >
           </div>
         </div>
         <ul class="flex flex-col gap-4 mb-12">
           <li class="flex gap-[17px]">
             <img src="./assets/icon-location.svg" alt="#" aria-label="hidden" />
-            <p class="text-light-toggle text-body-s">San Francisso</p>
+            <p class="userLocation text-light-toggle text-body-s">
+              San Francisso
+            </p>
             <p class="not-available hidden text-light-toggle text-body-s">
               Not Available
             </p>
           </li>
           <li class="flex gap-3">
             <img src="./assets/icon-website.svg" alt="#" aria-label="hidden" />
-            <a class="text-light-toggle text-body-s hover:underline" href="#"
+            <a
+              target="_blank"
+              class="userWebsite text-light-toggle text-body-s hover:underline"
+              href="#"
               >https://github.blog</a
             >
             <p class="not-available hidden text-light-toggle text-body-s">
@@ -126,7 +140,10 @@
           </li>
           <li class="flex gap-3">
             <img src="./assets/icon-twitter.svg" alt="#" aria-label="hidden" />
-            <a class="text-light-toggle text-body-s hover:underline" href="#"
+            <a
+              target="_blank"
+              class="userTwitter text-light-toggle text-body-s hover:underline"
+              href="#"
               >@seangray-dev</a
             >
             <p class="not-available hidden text-light-toggle text-body-s">
@@ -135,7 +152,10 @@
           </li>
           <li class="flex gap-3">
             <img src="./assets/icon-company.svg" alt="#" aria-label="hidden" />
-            <a class="text-light-toggle text-body-s hover:underline" href="#"
+            <a
+              target="_blank"
+              class="userOrganizations text-light-toggle text-body-s hover:underline"
+              href="#"
               >@github</a
             >
             <p class="not-available hidden text-light-toggle text-body-s">
