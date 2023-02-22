@@ -28,6 +28,7 @@ module.exports = {
         "dark-bg-2": "#141D2F",
         "dark-bg": "#1E2A47",
         "heading-main": "#222731",
+        "theme-toggle-dark-hover": "#90A4D4",
         error: "#F74646",
       },
     },

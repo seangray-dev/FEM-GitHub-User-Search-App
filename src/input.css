@@ -6,22 +6,57 @@
   html {
     font-family: "Space Mono", sans-serif;
   }
+
+  /* theme toggler button */
+
+  .theme-toggle:hover svg path {
+    fill: black;
+  }
+
+  .theme-toggle:hover p {
+    color: black;
+  }
+
+  .dark .theme-toggle:hover svg path {
+    fill: #90a4d4;
+  }
+
+  .dark .theme-toggle:hover p {
+    color: #90a4d4;
+  }
+
+  /* search box */
+
   #search-input {
     padding-left: 45px;
     font-size: 13px;
     font-weight: 400;
   }
 
-  .theme-toggle:hover svg path {
-    fill: black;
+  .dark input:focus {
+    background-color: #1e2a47;
   }
 
-  form {
+  /* Apply the box shadow by default */
+  .search-form {
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   }
 
   .main-card {
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  }
+
+  /* Remove the box shadow in dark mode */
+  .dark .search-form {
+    box-shadow: none;
+  }
+
+  .dark .main-card {
+    box-shadow: none;
+  }
+
+  .dark svg.icon-links path {
+    fill: white;
   }
 
   .inactive {
