@@ -16,6 +16,14 @@ const userTwitter = document.querySelector(".userTwitter");
 const userOrganizations = document.querySelector(".userOrganizations");
 const notAvailableElements = document.querySelectorAll(".not-available");
 
+// check if user prefers dark mode
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  document.documentElement.classList.add("dark");
+}
+
 // toggle the theme between dark and light modes
 const themeToggle = document.querySelector(".theme-toggle");
 const toggleTheme = () => {
