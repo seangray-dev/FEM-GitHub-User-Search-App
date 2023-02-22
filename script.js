@@ -1,5 +1,4 @@
 // get DOM elements
-const themeToggle = document.querySelector(".theme-toggle");
 const searchForm = document.querySelector("form");
 const searchInput = document.querySelector("#search-input");
 const errorText = document.querySelector(".text-error");
@@ -17,7 +16,13 @@ const userTwitter = document.querySelector(".userTwitter");
 const userOrganizations = document.querySelector(".userOrganizations");
 const notAvailableElements = document.querySelectorAll(".not-available");
 
+// toggle the theme between dark and light modes
+const themeToggle = document.querySelector(".theme-toggle");
+const toggleTheme = () => {
+  document.documentElement.classList.toggle("dark");
+};
 
+themeToggle.addEventListener("click", toggleTheme);
 
 // helper function to toggle elements that are not available
 const toggleNotAvailable = function (element, value) {
