@@ -88,7 +88,7 @@ searchForm.addEventListener("submit", async (event) => {
     profileRepos.textContent = public_repos;
     profileFollowers.textContent = followers;
     profileFollowing.textContent = following;
-    userLocation.textContent = location || "Not available";
+    userLocation.textContent = location;
     toggleNotAvailable(notAvailableElements[0], location);
 
     userWebsite.href = html_url || "";
@@ -96,12 +96,10 @@ searchForm.addEventListener("submit", async (event) => {
       userWebsite.href !== "" ? userWebsite.href : "Not available";
     toggleNotAvailable(notAvailableElements[1], userWebsite.href);
 
-    userTwitter.innerHTML = twitter_username
-      ? `@${twitter_username}`
-      : "Not available";
+    userTwitter.innerHTML = `@${twitter_username ?? ""}`;
     toggleNotAvailable(notAvailableElements[2], twitter_username);
 
-    userOrganizations.textContent = company || "Not available";
+    userOrganizations.textContent = company;
     toggleNotAvailable(notAvailableElements[3], company);
   } catch (error) {
     console.error(error);
