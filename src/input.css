@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Space Mono", sans-serif;
+  }
+  #search-input {
+    padding-left: 45px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .theme-toggle:hover svg path {
+    fill: black;
+  }
+
+  form {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  }
+
+  .main-card {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  }
+
+  .inactive {
+    opacity: 0.5;
+  }
+
+  .inactive a,
+  .inactive p {
+    display: none;
+  }
+
+  .inactive .not-available {
+    display: block;
+  }
+}

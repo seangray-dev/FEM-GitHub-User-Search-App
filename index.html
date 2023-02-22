@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png" />
+
+    <!-- link to CSS -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | GitHub user search app</title>
+    <!-- link to script -->
+    <script defer src="script.js"></script>
+  </head>
+
+  <body class="px-6 bg-light-bg-2 dark:bg-dark-bg-2 min-h-screen">
+    <main class="grid items-center justify-center grid-cols-1">
+      <header class="flex justify-between items-center mt-8 mb-9">
+        <div class="text-heading-main text-heading-l font-extrabold">
+          <a href="#">devfinder</a>
+        </div>
+        <div>
+          <!-- <div class="">
+            Light <img src="./assets/icon-sun.svg" alt="#" />
+          </div> -->
+
+          <button
+            class="theme-toggle flex-grow flex gap-4 text-body-s font-extrabold text-light-heading-2 tracking-[2.5px] hover:text-heading-main uppercase dark:hidden">
+            Dark
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.513 11.397a.701.701 0 00-.588.128 7.496 7.496 0 01-2.276 1.336 7.101 7.101 0 01-2.583.462 7.505 7.505 0 01-5.32-2.209 7.568 7.568 0 01-2.199-5.342c0-.873.154-1.72.41-2.49a6.904 6.904 0 011.227-2.21.657.657 0 00-.102-.924.701.701 0 00-.589-.128C5.32.61 3.427 1.92 2.072 3.666A10.158 10.158 0 000 9.83c0 2.8 1.125 5.342 2.967 7.19a10.025 10.025 0 007.16 2.98c2.353 0 4.527-.822 6.266-2.183a10.13 10.13 0 003.58-5.624.623.623 0 00-.46-.796z"
+                fill="#697C9A"
+                fill-rule="nonzero" />
+            </svg>
+            <!-- <img class="" src="./assets/icon-moon.svg" alt="#" /> -->
+          </button>
+        </div>
+      </header>
+      <form action="/search" method="get" class="relative mb-4">
+        <label for="search-input" class="sr-only">Search GitHub username</label>
+        <img
+          src="./assets/icon-search.svg"
+          alt="#"
+          aria-label="hidden"
+          class="absolute top-1/2 transform -translate-y-1/2 left-3" />
+        <input
+          class="w-full rounded-2xl py-[18px] focus:outline-none"
+          type="search"
+          id="search-input"
+          name="q"
+          placeholder="Search GitHub username... " />
+        <p
+          class="text-error font-extrabold absolute top-1/2 transform -translate-y-1/2 right-32 hidden">
+          No results
+        </p>
+        <button
+          class="bg-primary hover:bg-primary-hover text-[14px] text-white rounded-[10px] py-3 px-[14px] absolute top-1/2 transform -translate-y-1/2 right-2"
+          type="submit">
+          Search
+        </button>
+      </form>
+      <div class="main-card bg-light-bg px-[14px] rounded-2xl">
+        <div class="flex my-8 gap-[19px]">
+          <img
+            class="w-[70px] h-[70px]"
+            src="./assets/Oval.png"
+            alt="#"
+            aria-label="hidden" />
+          <div>
+            <h2 class="font-extrabold text-heading-s">The Octocat</h2>
+            <a class="text-body-s text-primary hover:text-primary-hover" href=""
+              >@octocat</a
+            >
+            <p class="text-body-s text-light-toggle">
+              Joined <span>25 Jan 2011</span>
+            </p>
+          </div>
+        </div>
+        <p class="text-body-s text-light-toggle mb-6">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          Quisque volutpat mattis eros.
+        </p>
+        <div
+          class="bg-light-bg-2 mx-auto rounded-[10px] flex justify-between text-center px-8 py-5 mb-6">
+          <div class="flex flex-col gap-2">
+            <span class="text-[11px] text-light-heading-2">Repos</span>
+            <span class="text-heading-main font-extrabold">8</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="text-[11px] text-light-heading-2">Followers</span>
+            <span class="text-heading-main font-extrabold">3938</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="text-[11px] text-light-heading-2">Following</span>
+            <span class="text-heading-main font-extrabold">9</span>
+          </div>
+        </div>
+        <ul class="flex flex-col gap-4 mb-12">
+          <li class="flex gap-[17px]">
+            <img src="./assets/icon-location.svg" alt="#" aria-label="hidden" />
+            <p class="text-light-toggle text-body-s">San Francisso</p>
+            <p class="not-available hidden text-light-toggle text-body-s">
+              Not Available
+            </p>
+          </li>
+          <li class="flex gap-3">
+            <img src="./assets/icon-website.svg" alt="#" aria-label="hidden" />
+            <a class="text-light-toggle text-body-s hover:underline" href="#"
+              >https://github.blog</a
+            >
+            <p class="not-available hidden text-light-toggle text-body-s">
+              Not Available
+            </p>
+          </li>
+          <li class="flex gap-3">
+            <img src="./assets/icon-twitter.svg" alt="#" aria-label="hidden" />
+            <a class="text-light-toggle text-body-s hover:underline" href="#"
+              >@seangray-dev</a
+            >
+            <p class="not-available hidden text-light-toggle text-body-s">
+              Not Available
+            </p>
+          </li>
+          <li class="flex gap-3">
+            <img src="./assets/icon-company.svg" alt="#" aria-label="hidden" />
+            <a class="text-light-toggle text-body-s hover:underline" href="#"
+              >@github</a
+            >
+            <p class="not-available hidden text-light-toggle text-body-s">
+              Not Available
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
